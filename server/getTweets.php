@@ -2,9 +2,9 @@
 include 'database.php';
 $search_term=$_GET["term"];
 
-echo $search_term;
+$query="SELECT * FROM cached_tweets WHERE text LIKE  '%$search_term%' ";
 
-$query='SELECT * FROM `cached_tweets` WHERE `text` LIKE CONVERT(_utf8 '$search_term' USING latin1) COLLATE latin1_general_ci';
+echo $query;
 
 $result=$mysqli->query($query);
 
@@ -18,8 +18,4 @@ else{
 	echo FAILURE;
 	exit;
 }
-
-
-
-
 ?>
