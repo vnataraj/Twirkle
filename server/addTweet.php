@@ -18,11 +18,10 @@ $result=$mysqli->query("INSERT INTO cached_tweets (id, createdAt, retweetCount, 
 
 if($result==false){
 	echo FAILURE;
-	return false;
+	exit;
 }
 else{
 	echo SUCCESS;
-	return true;
 }	
 	
 	

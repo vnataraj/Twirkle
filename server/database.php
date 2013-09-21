@@ -12,8 +12,8 @@
     echo "Failed to connect to MySQL: " . mysqli_connect_error();
     exit;
   }
-  echo "success";
+  echo "success\n";
   //define some constants
-  define("FAILURE", "-1");
-  define ("SUCCESS", "1");
+  define("FAILURE", "-1\n");
+  define ("SUCCESS", "1\n");
 ?>

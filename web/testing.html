@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Server Testing</title>
+</head>
+
+<body>
+<h2>User Operations</h2>
+<table>
+  <tr><form action="addTweet.php" method="get">
+    <td>add Tweet (addTweet.php)</td>
+    <td><input type="submit" value="Go"></td>
+    <td>id: <input type="text" name="id"></td>
+    <td>createdAt: <input type="text" name="createdAt"></td>
+	<td>retweetCount: <input type="text" name="retweetCount"></td>
+	<td>latitude: <input type="text" name="latitude"></td>
+	<td>longitude: <input type="text" name="latitude"></td>
+	<td>user_id: <input type="text" name="user_id"></td>
+	<td>user_name: <input type="text" name="user_name"></td>
+	<td>text: <input type="text" name="text"></td>
+  </form></tr>
+  <tr><form action="getTweets.php" method="get">
+    <td>GetTweets (getTweets.php)</td>
+    <td><input type="submit" value="Go"></td>
+    <td>term <input type="text" name="term"></td>
+  </form></tr></table>
+
+</body>
+</html>
