@@ -4,8 +4,6 @@ $search_term=$_GET["term"];
 
 $query="SELECT * FROM cached_tweets WHERE text LIKE  '%$search_term%' ";
 
-echo $query;
-
 $result=$mysqli->query($query);
 
 if($result){
