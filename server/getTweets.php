@@ -2,7 +2,7 @@
 $search_term=$_GET["term"];
 include 'database.php';
 
-$query='SELECT * FROM `cached_tweets` WHERE `text` LIKE CONVERT(_utf8 \'%#art%\' USING latin1) COLLATE latin1_general_ci';
+$query='SELECT * FROM `cached_tweets` WHERE `text` LIKE CONVERT(_utf8 \'%$search_term%\' USING latin1) COLLATE latin1_general_ci';
 
 $result=$mysqli->query($query);
 
