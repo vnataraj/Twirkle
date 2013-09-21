@@ -1,8 +1,8 @@
 <?php
-  $DB_NAME = 'tweetlocation.cbwvsfmb3m23.us-west-2.rds.amazonaws.com:3306';
-  $DB_USER = 'twirkle';
-  $DB_PASS = 'inductionorbust';
-  $DB_TABLE = 'twirkle';
+	$DB_HOST = "mysql16.000webhost.com";
+	$DB_TABLE = "a8969646_tweets";
+	$DB_USER = "a8969646_twirkle";
+	$DB_PASS = "tw1rkle";
 
   // Create connection
   $mysqli=mysqli_connect($DB_HOST,$DB_USER,$DB_PASS,$DB_TABLE);
