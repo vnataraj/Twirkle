@@ -2,7 +2,7 @@
 include 'database.php';
 $search_term=$_GET["term"];
 
-$query="SELECT longitude, latitude FROM cached_tweets WHERE text LIKE  '%$search_term%' ";
+$query="SELECT longitude, latitude, user_name, text FROM cached_tweets WHERE text LIKE  '%$search_term%' ";
 
 $result=$mysqli->query($query);
 
@@ -18,8 +18,8 @@ function drawMap(){
 	dataTable.addRows(400);
 	dataTable.addColumn("number", "LATITUDE");
 	dataTable.addColumn("number", "LONGITUDE");
-	dataTable.addColumn("number", "COLOR");
-	dataTable.addColumn("number", "SIZE");';
+	dataTable.addColumn("string", "DESCRIPTION");
+	dataTable.addColumn("number", "VALUE");';
 	while($row=$result->fetch_assoc()){	
 		echo 'dataTable.setValue(';
 		echo $i;
@@ -40,7 +40,9 @@ function drawMap(){
 		echo ',';
 		echo 2;
 		echo ',';
-		echo 1;
+		echo '"';
+		echo (string)$row['user_name'];
+		echo '"';
 		echo ');';
 		echo 'dataTable.setValue(';
 		echo $i;
