@@ -5,14 +5,14 @@
   <head>
     <title>Twirkle</title>
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+
     <style type="text/css">
       /* Space out content a bit */
       body {
         padding-top: 20px;
         padding-bottom: 20px;
+		background-image:url('http://www.studiolum.com/wang/chinese/chang-si-turtle-painting-beijing.jpg');
       }
       /* Everything but the jumbotron gets side spacing for mobile first views */
       .header, .marketing, .footer {
@@ -21,7 +21,7 @@
       }
       /* Custom page header */
       .header {
-        border-bottom: 1px solid #e5e5e5;
+        border-bottom: 0;
       }
       /* Make the masthead heading the same height as the navigation */
       .header h3 {
@@ -34,7 +34,7 @@
       .footer {
         padding-top: 19px;
         color: #777;
-        border-top: 1px solid #e6e5e5;
+        border-top: 0;
       }
       /* Customize container */
       @media(min-width: 768px) {
@@ -48,7 +48,7 @@
       /* Main marketing message and sign up button */
       .jumbotron {
         text-align: center;
-        border-bottom: 1px solid #e5e5e5;
+        border-bottom: 0;
       }
       .jumbotron .btn {
         font-size: 21px;
@@ -118,6 +118,31 @@
   </head>
   
   <body>
-    
- <img src="http://www.poolmosaics.net/media/catalog/product/cache/1/small_image/203x/9df78eab33525d08d6e5fb8d27136e95/t/u/turtle_topview_large_green_with_shadow.jpg>  	<div id=" page-wrap ">    <div class="container ">      <div class="header "><ul class="nav nav-pills pull-right "></ul></div>      <div class="jumbotron "><h1>Twirkle</h1><p></p><form action="getTweets.php" input type="text" term=document.getElementById("form-class") method="get"><input type="text "><button> <input type="submit" value="Go"></button></form></div>      <div id="bg "></div>    </div>    <!-- /container -->  </body></html>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+      <script src="bootstrap.min.js"></script>
+  
+<div id=" page-wrap">    
+<div class="container">
+<div class="header">
+	<ul class="nav nav-pills pull-right">
+	</ul>
+</div>      
+<div class="jumbotron">
+	<h1>
+		Twirkle
+	</h1>
+	<p>
+	</p>
+	<form action="getTweets.php" method="get">
+		<input type="text" name="term" style="
+		    width: 324px;
+		">
+	</form>
+</div>      
+<div id="bg ">
+</div>    
+</div>    
+<!-- /container -->  
+</body>
+</html>
 

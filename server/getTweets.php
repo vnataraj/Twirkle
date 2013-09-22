@@ -8,7 +8,7 @@ $result=$mysqli->query($query);
 
 if($result){
 	while($row=$result->fetch_assoc()){	
-		printf("%s,%s,%s,%s,%s,%s,%s,%s\n",$row['id'], $row['createdAt'], $row['retweetCount'], $row['latitude'], $row['longitude'], $row['user_id'], $row['user_name'], $row['text']);
+		printf("{%s,%s,%s,%s,%s,%s,%s,%s}\n",$row['id'], $row['createdAt'], $row['retweetCount'], $row['latitude'], $row['longitude'], $row['user_id'], $row['user_name'], $row['text']);
 	}
 }
 
